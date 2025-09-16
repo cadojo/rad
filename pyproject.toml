@@ -1,0 +1,21 @@
+[project]
+name = "rad"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Joseph D. Carpinelli", email = "joseph.d.carpinelli@loopy.codes" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "jsonschema[format]>=4.23.0",
+    "rich>=14.1.0",
+    "typer>=0.17.4",
+]
+
+[project.scripts]
+rad = "rad:main"
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.9.0"]
+build-backend = "uv_build"
